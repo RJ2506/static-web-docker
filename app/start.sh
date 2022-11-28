@@ -1,5 +1,5 @@
 
 
-envsubst < /app/student.txt > /app/student.txt
+envsubst < /app/student.txt > /student.txt
 
 python3 web.py
