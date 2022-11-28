@@ -1,6 +1,6 @@
 FROM nginx
 
-COPY . .
+COPY . ./
 
 RUN mkdir /etc/nginx/templates
 
