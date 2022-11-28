@@ -12,7 +12,7 @@ server {
         location = /50x.html {
         root   /usr/share/nginx/html;
     }
-        location ~ ^/eval/(.*)$ {
+        location /eval/ {
                 proxy_pass      ${API_URL};
                 proxy_redirect  off;
         }
