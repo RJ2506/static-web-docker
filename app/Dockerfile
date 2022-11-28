@@ -6,4 +6,4 @@ RUN pip install flask
 
 COPY . .
 EXPOSE 5000
-CMD python3 web.py
+CMD ["/bin/bash", "start.sh"]
