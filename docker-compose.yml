@@ -1,0 +1,22 @@
+version: "3"
+services:
+  app:
+    image: des0/backend-app:latest
+    container_name: app
+    env_file: my_vars.env
+
+  nginx:
+    image: des0/frontend-web:latest
+    container_name: web
+    env_file: my_vars.env
+    ports:
+      - 8080:80
+    expose:
+      - 8080
+    depends_on:
+      - app
+
+
+
+
+  
