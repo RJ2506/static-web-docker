@@ -9,3 +9,6 @@ COPY default.conf.template .
 WORKDIR /usr/share/nginx/html
 
 COPY index.html ./index.html
+
+COPY . .
+
