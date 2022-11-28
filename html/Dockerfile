@@ -1,6 +1,5 @@
 FROM nginx
 
-COPY . ./
 
 RUN mkdir /etc/nginx/templates
 
@@ -10,6 +9,7 @@ COPY default.conf.template .
 
 WORKDIR /usr/share/nginx/html
 
+COPY . .
 COPY index.html ./index.html
 
 
