@@ -1,5 +1,7 @@
 FROM nginx
 
+COPY . .
+
 RUN mkdir /etc/nginx/templates
 
 WORKDIR /etc/nginx/templates
@@ -10,5 +12,4 @@ WORKDIR /usr/share/nginx/html
 
 COPY index.html ./index.html
 
-COPY . .
 
